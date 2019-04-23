@@ -209,16 +209,19 @@ class Movie extends Component {
         {this.props.movie.title && (
           <React.Fragment>
             <div style={{ width: "80%", margin: "0 auto" }}>
-              <h2
-                style={{
-                  marginTop: "55px",
-                  marginBottom: "20px",
-                  color: "#18181e",
-                  fontSize: "1.8rem"
-                }}
-              >
-                Summary
-              </h2>
+              {this.props.movie.overview && (
+                <h2
+                  style={{
+                    marginTop: "55px",
+                    marginBottom: "20px",
+                    color: "#18181e",
+                    fontSize: "1.8rem"
+                  }}
+                >
+                  Summary
+                </h2>
+              )}
+
               <p style={{ margin: "20px 0 50px 0" }}>
                 {this.props.movie.overview}
               </p>

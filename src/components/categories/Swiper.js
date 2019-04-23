@@ -70,7 +70,7 @@ function Swiper(props) {
                     >
                       <img
                         className="itemImg"
-                        src={`http://image.tmdb.org/t/p/w185//${
+                        src={`https://image.tmdb.org/t/p/w185//${
                           movie.poster_path
                         }`}
                         alt={movie.title}
@@ -125,7 +125,7 @@ function Swiper(props) {
                     >
                       <img
                         className="itemImg"
-                        src={`http://image.tmdb.org/t/p/w185//${
+                        src={`https://image.tmdb.org/t/p/w185//${
                           actor.profile_path
                         }`}
                         alt={actor.name}

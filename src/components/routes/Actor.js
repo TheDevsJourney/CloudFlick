@@ -4,14 +4,14 @@ import { loadActorIMDB, resetMovie } from "../../actions/actions";
 import Loader from "../Loader";
 import { Link, withRouter } from "react-router-dom";
 import ViewMovie from "../ViewMovie";
-let error;
 let _mounted = false;
 let year = new Date().getFullYear();
 
 class Actor extends Component {
   _mounted = false;
   state = {
-    load: false
+    load: false,
+    error: ""
   };
   componentDidMount() {
     _mounted = true;
@@ -20,12 +20,17 @@ class Actor extends Component {
         load: true
       });
       setTimeout(() => {
-        if (this.props.person) {
+        if (this.props.person.imdb_id !== "") {
+          this.setState({
+            error: ""
+          });
           this.props.onLoadActorIMDB(this.props.person.imdb_id);
         } else {
-          error = "Sorry We Can't Find This...";
+          this.setState({
+            error: "Sorry We Can't Find This..."
+          });
         }
-      }, 500);
+      }, 1100);
       setTimeout(() => {
         this.setState({
           load: false
@@ -186,7 +191,6 @@ class Actor extends Component {
                             borderRadius: "4px"
                           }}
                         />
-                        {/* Make sure media type is movie */}
 
                         <div
                           style={{
@@ -211,7 +215,19 @@ class Actor extends Component {
           </div>
         ))}
 
-        {error && <p>{error}</p>}
+        {this.state.error && (
+          <div
+            style={{
+              height: "92vh",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <h2>{this.state.error}</h2>
+          </div>
+        )}
         {this.state.load && <Loader />}
       </React.Fragment>
     );
