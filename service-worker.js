@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TheDevsJourney/CloudFlick.git/precache-manifest.a3826343f9de780137e44905dab13c6f.js"
+  "/CloudFlick/precache-manifest.a6a0724c09632e36260a27fefffee0bd.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/TheDevsJourney/CloudFlick.git/index.html", {
+workbox.routing.registerNavigationRoute("/CloudFlick/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
