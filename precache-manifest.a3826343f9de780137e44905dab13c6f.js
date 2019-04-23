@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/TheDevsJourney/CloudFlick.git/static/js/runtime~main.e89a0c9b.js"
   },
   {
-    "revision": "c22ce4bab865aadae2da",
-    "url": "/TheDevsJourney/CloudFlick.git/static/js/main.9a6c0453.chunk.js"
+    "revision": "ddc26817ebad8ece5a54",
+    "url": "/TheDevsJourney/CloudFlick.git/static/js/main.09f7165e.chunk.js"
   },
   {
     "revision": "a5a385840404928b73fc",
     "url": "/TheDevsJourney/CloudFlick.git/static/js/2.d2b727d2.chunk.js"
   },
   {
-    "revision": "c22ce4bab865aadae2da",
+    "revision": "ddc26817ebad8ece5a54",
     "url": "/TheDevsJourney/CloudFlick.git/static/css/main.2d72e6a1.chunk.css"
   },
   {
-    "revision": "50db16f63c4af02ff02e859747629b85",
+    "revision": "3902a8c70c707b516990ec1ecd149ac9",
     "url": "/TheDevsJourney/CloudFlick.git/index.html"
   }
 ];
