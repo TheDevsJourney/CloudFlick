@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TheDevsJourney/CloudFlick.git/precache-manifest.81ff10972744304c314c3bfecf9f7c32.js"
+  "/TheDevsJourney/CloudFlick.git/precache-manifest.a2ebfb1c683ae52caa939a6b653da6ad.js"
 );
 
 workbox.clientsClaim();
