@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/CloudFlick/static/js/runtime~main.6b2174f0.js"
   },
   {
-    "revision": "be7602a93f55f70b87e3",
+    "revision": "8a402492c59af87dc9ed",
     "url": "/CloudFlick/static/js/main.d2784b2b.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/CloudFlick/static/js/2.d2b727d2.chunk.js"
   },
   {
-    "revision": "be7602a93f55f70b87e3",
-    "url": "/CloudFlick/static/css/main.29541870.chunk.css"
+    "revision": "8a402492c59af87dc9ed",
+    "url": "/CloudFlick/static/css/main.006e2007.chunk.css"
   },
   {
-    "revision": "da6ede40f5fd00545f7fbcc4c2761880",
+    "revision": "960a6b4ccea47688303d3f9a554d3a2e",
     "url": "/CloudFlick/index.html"
   }
 ];

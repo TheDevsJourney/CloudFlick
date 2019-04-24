@@ -1,5 +1,5 @@
 {
-  "main.css": "/CloudFlick/static/css/main.29541870.chunk.css",
+  "main.css": "/CloudFlick/static/css/main.006e2007.chunk.css",
   "main.js": "/CloudFlick/static/js/main.d2784b2b.chunk.js",
   "main.js.map": "/CloudFlick/static/js/main.d2784b2b.chunk.js.map",
   "runtime~main.js": "/CloudFlick/static/js/runtime~main.6b2174f0.js",
@@ -7,7 +7,7 @@
   "static/js/2.d2b727d2.chunk.js": "/CloudFlick/static/js/2.d2b727d2.chunk.js",
   "static/js/2.d2b727d2.chunk.js.map": "/CloudFlick/static/js/2.d2b727d2.chunk.js.map",
   "index.html": "/CloudFlick/index.html",
-  "precache-manifest.43caaee9add2e46086c27a7e2b0d7f37.js": "/CloudFlick/precache-manifest.43caaee9add2e46086c27a7e2b0d7f37.js",
+  "precache-manifest.0f8bc75ac994d1d3fc6a09ff8b3329b9.js": "/CloudFlick/precache-manifest.0f8bc75ac994d1d3fc6a09ff8b3329b9.js",
   "service-worker.js": "/CloudFlick/service-worker.js",
-  "static/css/main.29541870.chunk.css.map": "/CloudFlick/static/css/main.29541870.chunk.css.map"
+  "static/css/main.006e2007.chunk.css.map": "/CloudFlick/static/css/main.006e2007.chunk.css.map"
 }
