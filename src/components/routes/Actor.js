@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loadActorIMDB, resetMovie } from "../../actions/actions";
+import { loadActorIMDB, resetMovie, singleMovie } from "../../actions/actions";
 import Loader from "../Loader";
 import { Link, withRouter } from "react-router-dom";
 import ViewMovie from "../ViewMovie";
+
 let _mounted = false;
 let year = new Date().getFullYear();
 
@@ -102,8 +103,8 @@ class Actor extends Component {
                   {this.props.person.gender === 1 && <p>Female | Actress</p>}
                   {this.props.person.gender === 2 && <p>Male | Actor</p>}
                 </div>
-                {this.props.person.birthday && (
-                  <p style={{ color: "rgba(225,225,225,0.3)" }}>
+                {this.props.person.birthday && !this.props.person.deathday && (
+                  <p style={{ color: "rgba(225,225,225,0.5)" }}>
                     {`${year -
                       parseInt(
                         this.props.person.birthday.slice(0, 4)
@@ -202,9 +203,35 @@ class Actor extends Component {
                           <h2 style={{ color: "#18181e", fontSize: "1.5rem" }}>
                             {works.title ? works.title : works.name}
                           </h2>
-                          <p style={{ margin: "5px 0 14px 0" }}>
-                            {works.overview && works.overview}
-                          </p>
+                          {works.overview && (
+                            <div style={{ margin: "5px 0 14px 0" }}>
+                              {works.overview.length < 140 && (
+                                <p>{works.overview}</p>
+                              )}
+                              {works.overview.length > 140 && (
+                                <div>
+                                  <p>
+                                    {works.overview.substring(0, 140) + "..."}{" "}
+                                  </p>
+
+                                  <span
+                                    style={{
+                                      color: "#18181e",
+                                      cursor: "pointer"
+                                    }}
+                                    onClick={() => {
+                                      this.props.onsingleMovie(works.id);
+                                      this.props.history.push(
+                                        `/movie/${works.id}`
+                                      );
+                                    }}
+                                  >
+                                    Read More
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          )}
                           <ViewMovie movie={works.id} />
                         </div>
                       </div>
@@ -245,7 +272,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onLoadActorIMDB: id => dispatch(loadActorIMDB(id)),
-    onResetMovie: () => dispatch(resetMovie())
+    onResetMovie: () => dispatch(resetMovie()),
+    onsingleMovie: id => dispatch(singleMovie(id))
   };
 };
 

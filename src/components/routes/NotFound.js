@@ -14,7 +14,7 @@ function NotFound() {
         height: "92vh"
       }}
     >
-      <h1>Page Not Found</h1>
+      <h2>Page Not Found</h2>
       <Link to="/">Return Home</Link>
     </div>
   );

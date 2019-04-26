@@ -19,6 +19,11 @@ body {
   color: pink;
 }
 
+.text_logo {
+  font-size: 28px;
+  color: #dec79b;
+}
+
 /* Loader */
 .loader {
   border: 8px solid #c0c0c0;
@@ -51,7 +56,6 @@ body {
 .moviesGridItem {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 400px;
   width: 250px;
@@ -98,7 +102,6 @@ body {
 .home_container {
   height: 92vh;
   display: flex;
-  /* cursor: pointer; */
 }
 
 .movie_section {
@@ -116,7 +119,7 @@ body {
 
 .movie_section:hover .home_content {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .movie_section:hover .bottom_line_text {
@@ -129,8 +132,7 @@ body {
   color: white;
   opacity: 0;
   transition: all 0.4s ease;
-  /* position: relative; */
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   height: 100%;
   width: 100%;
   display: flex;
@@ -140,7 +142,7 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -148,7 +150,7 @@ body {
 }
 
 .overlay_dark {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .right_line {
@@ -215,11 +217,6 @@ body {
   color: #18181e;
 }
 
-/* .header-icon__click {
-  transform: scale(1, 0);
-  transition: transform 0.3s ease-in-out;
-} */
-
 .header-search__active {
   width: 250px;
 }
@@ -244,7 +241,6 @@ body {
 .movie_backdrop__tint {
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.4); */
   background: linear-gradient(0deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0.45) 92%)
     center center no-repeat;
 }
@@ -320,5 +316,20 @@ body {
   /* Single Movie Page */
   .tagline {
     width: 60%;
+  }
+
+  /* Home Page */
+  .home_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Nav Bar */
+  .text_logo {
+    display: none;
+  }
+
+  .FavoritesHeart {
+    display: none;
   }
 }

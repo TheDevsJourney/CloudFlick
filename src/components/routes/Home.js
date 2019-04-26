@@ -8,16 +8,6 @@ import Header from "../Header";
 function Home() {
   return (
     <React.Fragment>
-      {/* <div
-        className="home"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          textAlign: "center"
-        }}
-      >
-        <Header />
-      </div> */}
       <Header />
       <br />
       <br />

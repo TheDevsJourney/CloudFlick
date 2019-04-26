@@ -40,7 +40,6 @@ class Movie extends Component {
 
     const handleClick = id => {
       this.props.onLoadPerson(id);
-      // this.props.onResetMovie();
       this.props.history.push(`/actor`);
     };
 
@@ -75,13 +74,18 @@ class Movie extends Component {
                   }}
                 >
                   <h2>{this.props.movie.title}</h2>
-                  <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row"
+                    }}
+                  >
                     {this.props.movie.genres.map((genre, id) => (
                       <p
                         style={{
                           marginRight: "6px",
                           marginTop: "7px",
-                          color: "rgba(225,225,225,0.3)",
+                          color: "rgba(225,225,225,0.5)",
                           fontSize: "1rem"
                         }}
                         key={id}
@@ -127,8 +131,6 @@ class Movie extends Component {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)"
-                  // overflow: "hidden",
-                  // paddingTop: "56.25%"
                 }}
               >
                 {this.props.trailer.map(
@@ -190,9 +192,6 @@ class Movie extends Component {
                   }}
                   ref={youtubePlay}
                   onClick={() => {
-                    // movie_trailer__iframe.current.classList.add(
-                    //   "movie_trailer__reveal"
-                    // );
                     movie_trailer__iframe.current.setAttribute(
                       "src",
                       youtubeSrc

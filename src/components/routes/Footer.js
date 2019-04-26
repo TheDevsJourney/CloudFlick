@@ -11,22 +11,9 @@ function Footer() {
         color: "#f5f5f5",
         position: "absolute",
         bottom: "0"
-        // Fix this by making footer responsive ...
-        // overflow: "hidden"
       }}
     >
-      <div
-        className="footerContainer"
-        // style={{
-        //   width: "80%",
-        //   height: "100%",
-        //   margin: "0 auto",
-        //   padding: "70px 0",
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   position: "relative"
-        // }}
-      >
+      <div className="footerContainer">
         <div
           className="footerInfo"
           style={{
@@ -81,17 +68,7 @@ function Footer() {
           />
         </div>
 
-        <div
-          className="footerCopyright"
-          // style={{
-          //   marginTop: "15px",
-          //   display: "flex",
-          //   flexDirection: "column",
-          //   position: "absolute",
-          //   bottom: "40px",
-          //   width: "100%"
-          // }}
-        >
+        <div className="footerCopyright">
           <p style={{ color: "rgba(225,225,225,0.7)", marginBottom: "5px" }}>
             Copyright ©2019
           </p>

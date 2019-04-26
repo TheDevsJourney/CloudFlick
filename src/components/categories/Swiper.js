@@ -109,7 +109,7 @@ function Swiper(props) {
                   </div>
                 )
             )}
-            {/* Display Actors. Refactor this code -- dry*/}
+            {/* Display Actors. */}
             {props.movies.map(
               actor =>
                 actor.name &&
@@ -157,7 +157,6 @@ function Swiper(props) {
           </React.Fragment>
         </div>
       </div>
-      {/* <hr className="hr_style" /> */}
     </React.Fragment>
   );
 }

@@ -24,7 +24,6 @@ function NavBar(props) {
           height: "8vh",
           position: "relative",
           padding: "30px 0"
-          // height: "70px"
         }}
       >
         <Link
@@ -34,9 +33,9 @@ function NavBar(props) {
             props.onResetPersonIMDB()
           )}
           to="/"
-          style={{ textDecoration: "none", color: "#DEC79B" }}
+          style={{ textDecoration: "none" }}
         >
-          <h1 style={{ fontSize: "28px" }}>CloudFlick</h1>
+          <h1 className="text_logo">CloudFlick</h1>
         </Link>
 
         <Search />
