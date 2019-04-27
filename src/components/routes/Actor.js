@@ -48,7 +48,7 @@ class Actor extends Component {
     return (
       <React.Fragment>
         {this.props.personIMDB.map(personIMDB => (
-          <div className="movie_backdrop__container">
+          <div className="movie_backdrop__container" key={personIMDB.id}>
             <div
               className="movie_backdrop"
               style={{
@@ -142,7 +142,10 @@ class Actor extends Component {
         ))}
 
         {this.props.personIMDB.map(personIMDB => (
-          <div style={{ width: "80%", margin: "50px auto" }}>
+          <div
+            style={{ width: "80%", margin: "50px auto" }}
+            key={personIMDB.id}
+          >
             {this.props.person.biography && (
               <div style={{ marginBottom: "55px" }}>
                 <h2
@@ -159,6 +162,8 @@ class Actor extends Component {
             )}
             {personIMDB.known_for.length !== 0 && (
               <React.Fragment>
+                {/* Store media types in an array, if that array has no movies, do not display h2 */}
+
                 <h2
                   style={{
                     marginTop: "55px",
@@ -169,6 +174,7 @@ class Actor extends Component {
                 >
                   Popular Roles
                 </h2>
+
                 {personIMDB.known_for.map(
                   works =>
                     works.media_type === "movie" && (
@@ -178,6 +184,7 @@ class Actor extends Component {
                           display: "flex",
                           alignItems: "center"
                         }}
+                        key={works.id}
                       >
                         <div
                           style={{
