@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loadActorIMDB, resetMovie, singleMovie } from "../../actions/actions";
+import {
+  loadActorIMDB,
+  resetMovie,
+  singleMovie,
+  loadTrailer,
+  loadActors
+} from "../../actions/actions";
 import Loader from "../Loader";
 import { Link, withRouter } from "react-router-dom";
 import ViewMovie from "../ViewMovie";
@@ -224,10 +230,13 @@ class Actor extends Component {
                                   <span
                                     style={{
                                       color: "#18181e",
+                                      textDecoration: "underline",
                                       cursor: "pointer"
                                     }}
                                     onClick={() => {
                                       this.props.onsingleMovie(works.id);
+                                      this.props.onLoadActors(works.id);
+                                      this.props.onLoadTrailer(works.id);
                                       this.props.history.push(
                                         `/movie/${works.id}`
                                       );
@@ -280,7 +289,9 @@ const mapDispatchToProps = dispatch => {
   return {
     onLoadActorIMDB: id => dispatch(loadActorIMDB(id)),
     onResetMovie: () => dispatch(resetMovie()),
-    onsingleMovie: id => dispatch(singleMovie(id))
+    onsingleMovie: id => dispatch(singleMovie(id)),
+    onLoadTrailer: id => dispatch(loadTrailer(id)),
+    onLoadActors: id => dispatch(loadActors(id))
   };
 };
 

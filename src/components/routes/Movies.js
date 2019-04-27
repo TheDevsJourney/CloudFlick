@@ -8,12 +8,16 @@ import {
   loadActors,
   resetMovies
 } from "../../actions/actions";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 
 function Movies(props) {
   return (
     <React.Fragment>
-      {/* <Link to="/">Go Home</Link> */}
+      <div style={{ width: "80%", margin: "35px auto 0" }}>
+        <Link to="/" style={{ color: "#18181e" }}>
+          Home
+        </Link>
+      </div>
       {props.movies.length !== 0 && (
         <div className="moviesGrid">
           {props.movies.map(

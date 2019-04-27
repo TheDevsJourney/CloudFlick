@@ -1,5 +1,6 @@
 import React from "react";
 import tmdb from "../../images/tmdb.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -21,7 +22,14 @@ function Footer() {
             justifyContent: "space-between"
           }}
         >
-          <h1 style={{ fontSize: "28px" }}>CloudFlick</h1>
+          <h1
+            style={{ fontSize: "28px" }}
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              CloudFlick
+            </Link>
+          </h1>
           <div>
             <p
               className="footerContactMe"
