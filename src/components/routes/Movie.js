@@ -80,21 +80,23 @@ class Movie extends Component {
                       flexDirection: "row"
                     }}
                   >
-                    {this.props.movie.genres.map((genre, id) => (
-                      <p
-                        style={{
-                          marginRight: "6px",
-                          marginTop: "7px",
-                          color: "rgba(225,225,225,0.5)",
-                          fontSize: "1rem"
-                        }}
-                        key={id}
-                      >
-                        {id !== this.props.movie.genres.length - 1
-                          ? `${genre.name} |`
-                          : `${genre.name}`}
-                      </p>
-                    ))}
+                    {this.props.movie.genres
+                      .map((genre, id) => (
+                        <p
+                          style={{
+                            marginRight: "6px",
+                            marginTop: "7px",
+                            color: "rgba(225,225,225,0.5)",
+                            fontSize: "1rem"
+                          }}
+                          key={id}
+                        >
+                          {id !== this.props.movie.genres.length - 1 && id < 3
+                            ? `${genre.name} |`
+                            : `${genre.name}`}
+                        </p>
+                      ))
+                      .splice(0, 4)}
                   </div>
                 </div>
               </div>
@@ -178,6 +180,7 @@ class Movie extends Component {
                   X
                 </p>
               </div>
+
               {this.props.trailer.length !== 0 && (
                 <i
                   className="fab fa-youtube"
