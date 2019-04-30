@@ -1,13 +1,13 @@
 {
-  "main.css": "/CloudFlick/static/css/main.adf26ae5.chunk.css",
-  "main.js": "/CloudFlick/static/js/main.37fbfca8.chunk.js",
-  "main.js.map": "/CloudFlick/static/js/main.37fbfca8.chunk.js.map",
+  "main.css": "/CloudFlick/static/css/main.8f9f2b6e.chunk.css",
+  "main.js": "/CloudFlick/static/js/main.c54f5433.chunk.js",
+  "main.js.map": "/CloudFlick/static/js/main.c54f5433.chunk.js.map",
   "runtime~main.js": "/CloudFlick/static/js/runtime~main.6b2174f0.js",
   "runtime~main.js.map": "/CloudFlick/static/js/runtime~main.6b2174f0.js.map",
   "static/js/2.fdd9b4f2.chunk.js": "/CloudFlick/static/js/2.fdd9b4f2.chunk.js",
   "static/js/2.fdd9b4f2.chunk.js.map": "/CloudFlick/static/js/2.fdd9b4f2.chunk.js.map",
   "index.html": "/CloudFlick/index.html",
-  "precache-manifest.22f766e8668ae08b5c792feecc813d5b.js": "/CloudFlick/precache-manifest.22f766e8668ae08b5c792feecc813d5b.js",
+  "precache-manifest.1d5257ef9b9dccc9e57930383db81559.js": "/CloudFlick/precache-manifest.1d5257ef9b9dccc9e57930383db81559.js",
   "service-worker.js": "/CloudFlick/service-worker.js",
-  "static/css/main.adf26ae5.chunk.css.map": "/CloudFlick/static/css/main.adf26ae5.chunk.css.map"
+  "static/css/main.8f9f2b6e.chunk.css.map": "/CloudFlick/static/css/main.8f9f2b6e.chunk.css.map"
 }

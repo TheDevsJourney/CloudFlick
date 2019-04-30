@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CloudFlick/precache-manifest.22f766e8668ae08b5c792feecc813d5b.js"
+  "/CloudFlick/precache-manifest.1d5257ef9b9dccc9e57930383db81559.js"
 );
 
 workbox.clientsClaim();
